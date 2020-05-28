@@ -96,5 +96,34 @@ module.exports = {
         }
       ]
     });
+  },
+
+  "GET /rest/schedule"(req, res) {
+    return res.json([
+      {
+        station: "北京南",
+        arriveTime: null,
+        departTime: "07:20",
+        stay: null
+      },
+      {
+        station: "天津南",
+        arriveTime: "07:54",
+        departTime: "07:56",
+        stay: 2
+      },
+      {
+        station: "南京南",
+        arriveTime: "11:51",
+        departTime: "11:53",
+        stay: 2
+      },
+      {
+        station: "上海虹桥",
+        arriveTime: "13:08",
+        departTime: null,
+        stay: null
+      }
+    ]);
   }
 };
